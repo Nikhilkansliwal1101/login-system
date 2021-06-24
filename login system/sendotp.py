@@ -1,3 +1,5 @@
+#please ensure that your google account allow less secure login
+
 #!C:\ProgramData\Anaconda3\python
 import smtplib
 import random
@@ -10,8 +12,8 @@ server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
 # For security reasons,  putting the SMTP connection in the TLS mode. TLS (Transport Layer Security) encrypts all
 # the SMTP commands our e-mail id and password
-sender="nikhilkansliwal2002@gmail.com"
-password="nikhil@1101"
+sender="###########"#email id
+password="########" #password
 server.login(sender,password)
 
 receiver=sys.argv[1]
